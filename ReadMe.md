@@ -10,6 +10,8 @@ The L33T Cryptic Signing Tool is a Python-based application that allows users to
 - **PyQT** for the GUI
 - **Python 3.13**
 - **PySide6**
+
+  
 ![image](https://github.com/user-attachments/assets/a8fe47bb-cf4f-4f2a-a55f-8155cea66b0a)
 
 ## Required Tools 🛠️
