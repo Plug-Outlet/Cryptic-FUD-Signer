@@ -55,6 +55,14 @@ The L33T Cryptic Signing Tool is a Python-based application that allows users to
 ### Sign Executable:
 - Click the "Sign Certificate" button to initiate the signing process.
 - The application will log all actions in the console output area (`binding_console_textEdit`).
+- (Run as Admin) choco install openssl
+- (Run as Admin) openssl genrsa -out private.key 2048
+
+![image](https://github.com/user-attachments/assets/0634e1b8-087a-4806-8be7-4aea17cbb12f)
+
+
+
+
 
 ### Spoof Extensions:
 - Check desired file extensions in the extension spoofing section and click "Spoof Extensions" to see which extensions will be spoofed.
