@@ -1,8 +1,8 @@
-# L33T Certificate Signing Tool 🛠️
+# L33T Cryptic Signing Tool 🛠️
 
 ## Overview 🌟
 
-The L33T Certificate Signing Tool is a Python-based application that allows users to sign executable files (EXE) with custom certificates. It provides a user-friendly interface for managing certificate details, spoofing file extensions, and uploading icons. The application utilizes `signtool.exe` for signing operations and logs all actions in a console output area.
+The L33T Cryptic Signing Tool is a Python-based application that allows users to sign executable files (EXE) with custom certificates. It provides a user-friendly interface for managing certificate details, spoofing file extensions, and uploading icons. The application utilizes `signtool.exe` for signing operations and logs all actions in a console output area.
 
 ## Developed With 🛠️
 
